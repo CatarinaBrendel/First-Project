@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #1b2330;
+    background-color: #181e2a;
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -24,6 +24,7 @@ body{
     height: 40px;
     font-size: 1em;
 }
+
 /* =========================================
     Basic Layout
 ========================================== */
@@ -69,40 +70,41 @@ body{
     line-height: 1.5em;
     padding: 0 0.3em;
 }
-.illustration-logo{
+.logo-illustration{
     padding-top: 3em;
     width: 90%;
+    text-align: center;
 }
 
 .objective{
     text-align: center;
     font-size: 0.9em;
-    padding: 3em 2em;
+    padding: 6em 2em;
     margin-bottom: 5em;
 }
+
 .icon{
     width: 20%;
     padding-top: 3.5em;
 }
 
-
 .logo-productive{
-    width: 80%;
-}
-.img-productive{
+    width: 50%;
     text-align: center;
 }
 
-.productive{
+.text-productive{
     text-align: left;
     padding: 0 1.5em;
     font-size: .95em;
     line-height: 1.5em;
     margin-bottom: 6em;
 }
+
 .productive h2{
     font-size: 1.2em;
 }
+
 .productive a{
     text-decoration: none;
     color: #4fc4d5;
@@ -114,4 +116,42 @@ body{
     content: url(images/icon-arrow.svg);
     margin-left: 5px;
 }
+
+.testimonial{
+    width: 300px;
+    background-color: #21293d;
+    margin: 2em auto;
+    padding: 1.5em;
+}
+
+.text-testimonial{
+    font-size: 0.6em;
+    line-height: 1.8em;
+    margin-bottom: 20px;
+}
+
+.face{
+    float: left;
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.job h5,
+.job p{
+    margin-left: 40px;
+    font-size: .5em;
+    line-height: .6em;
+}
+.testimonials{
+    position: relative;
+}
+.bg-quote{
+    position: absolute;
+    width: 25px;
+    left: 60px;
+    top: -20px;
+    z-index: -1;
+}
+
 /* -------- Media Queries --------*/
