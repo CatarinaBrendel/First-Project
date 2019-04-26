@@ -7,8 +7,7 @@ I hold no responsability once you run the code in your computer and not produce 
 
 ## Requirements
 
-Curently in it's ver1.0 the webpage has no repsonsive behavior and wil not be suited in very largers monitors or very small 
-screens such as phones or tablets. This funcionality is to be implemented on the second version.
+Curently in it's ver1.1, the webpage is fully repsonsive.
 
 ## License
 
