@@ -28,6 +28,25 @@ body{
     color: white;
 }
 
+.illustration{
+    text-align: center;
+    padding: 10%;
+}
+
+.illustration h1{
+    padding: 0 20%;
+    font-size: 2.5em;
+}
+
+.illustration p{
+    padding: 0 25%;
+    font-size: 1.2em;
+}
+
+.illustrtion button{
+    font-size: 1.2em;
+}
+
 .button {
     background-color: #4fc4d5;
     border: 1px solid #4fc4d5;
@@ -53,6 +72,7 @@ body{
 .testimonial{
     width: 300px;
     background-color: #21293d;
+    box-shadow: 0 0 5px 5px #0c1524;
     margin: 2em auto;
     padding: 1.5em;
 }
@@ -78,7 +98,8 @@ body{
 }
 
 .email{
-    background-color: white;
+    background-color: #fff;
+    border: 1px solid #fff;
     width: 60%;
     height: 50px;
     margin: 20px 25px;
@@ -95,11 +116,14 @@ footer{
     background-color: #0c1524;
     margin-top: 5%;
 }
-.social{
-    filter: invert(1);
+.style{
+    width: 40px;
+    margin-left: 10px;
 }
+
 .style:hover{
-    filter: invert(0.4) sepia(1) saturate(4) hue-rotate(151.2deg) brightness(1.09);
+    filter: invert(0.4) sepia(1) saturate(4) hue-rotate(151.5deg) brightness(1.4);
+    text-shadow: 0 0 5px 5px #4fc4d5;
 }
 
 /* =========================================
@@ -111,11 +135,12 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1.5em;
 }
 .logo{
     width: 20%;
     height: 20%;
+    margin: 10px;
 }
 .nav-header li{
     display: inline-block;
@@ -124,24 +149,6 @@ footer{
 
 /* ------ Flexbox Properties ------ */
 
-.illustration{
-    text-align: center;
-    padding: 10%;
-}
-
-.illustration h1{
-    padding: 0 20%;
-    font-size: 2.5em;
-}
-
-.illustration p{
-    padding: 0 25%;
-    font-size: 1.2em;
-}
-
-.illustrtion button{
-    font-size: 1.2em;
-}
 .objective{
     display: flex;
     flex-direction: row;
@@ -254,22 +261,14 @@ footer{
         width: 80%;
     }
 
-    .productive{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 3em 0;
-        padding: 0;
-    }
-
-    .logo-productive{
-        height: 50%;
-        width: 50% ;
-    }
+    .logo-productive,
     .text-productive{
-        width: 70%;
-        margin: 3em;
-        font-size: 1.1em;
+        width: 90%;
+    }
+    .productive{
+        display: block;
+        margin: 0 5%;
+        width: 100%;
     }
 
     .testimonials{
@@ -316,49 +315,49 @@ footer{
 
 @media (max-width: 767px){
     .main-header{
-        padding: 1em;;
+        padding: .5em;;
     }
     .nav-header li{
         display: inline-block;
-        padding: 1em;
+        padding: .8em;
     }
 
     .logo-illustration{
         width: 80%;
     }
+
+    .illustration p,
     .illustration h1{
-        font-size: 1.8em;
-        margin: 0;
-        padding: 2.5% 10%;
+        padding: 10px;
     }
+
     .illustration p{
         font-size: 1em;
-        margin: 0;
-        padding: 2.5%;
+    }
+
+    .illustration h1{
+        font-size: 1.4em;
     }
 
     .illustration button{
         margin-top: 2%;
     }
+
     .item{
         width: 80%;
         padding: 2em 1.5em;
         text-align: center;
     }
     .productive{
-        margin: 0;
         padding: 0;
     }
-    .logo-productive{
-        width: 60%;
-        align-self: center;
-    }
 
-    .productive p{
-        align-self: center;
-        font-size: 1em;
-        margin: 0;
-        padding: 0%;
+    .logo-productive,
+    .text-productive{
+        width: 90%;
+        margin: 5% 0;
+        padding-left: 20px;
+        text-align: center;
     }
 
     .early-access{
@@ -367,9 +366,10 @@ footer{
     .early-access p{
         font-size: .8em;
     }
+
     .email{
         width: 90%;
-        margin: 20px;
+        margin: 10px;
     }
     
     .early-access button{
@@ -405,8 +405,6 @@ footer{
         margin: 0;
     }
     
-
-
 
 }
 
