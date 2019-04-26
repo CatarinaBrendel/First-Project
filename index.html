@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
     <title>Landing Page</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapping">
         <header class="main-header">
-            <img class="logo" src="images/logo.svg" alt="Fylo Logo">
+            <!-- <img class="logo" src="images/logo.svg" alt="Fylo Logo"> -->
+            <h1>Fylo</h1>
             <nav class="nav-header">
-                <ul>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Sign in</a></li>
-                </ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Sign in</a></li>
             </nav>
         </header>
         <main>
@@ -32,19 +32,22 @@
             </section>
             <div>
                 <section class="objective">
-                    <div class="objective-left group">
+                    <div class="item">
                         <img class ="icon" src="images/icon-access-anywhere.svg" alt="Access">
                         <h3>Access your files anywhere</h3>
                         <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
-                        <img class ="icon" src="images/icon-security.svg" alt="Access">
+                    </div>
+                    <div class="item">   
+                    <img class ="icon" src="images/icon-security.svg" alt="Access">
                         <h3>Security you can trust</h3>
                         <p>2-factor authentication and user-controlled encryption are just a couple of security features we allowed to help secure your files.</p>
-                        
                     </div>
-                    <div class="objective-right group">
+                    <div class="item">  
                         <img class ="icon" src="images/icon-collaboration.svg" alt="Access">
                         <h3>Real-Time collaboration</h3>
                         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+                    </div>
+                    <div class="item"> 
                         <img class ="icon" src="images/icon-any-file.svg" alt="Access">
                         <h3>Store any type of file</h3>
                         <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
@@ -52,9 +55,9 @@
                 </section>
 
                 <section class="productive">
-                    <div class="logo-productive">
-                        <img src="images/illustration-stay-productive.png">
-                    </div>
+                    
+                        <img class="logo-productive" src="images/illustration-stay-productive.png">
+                    
                     <div class="text-productive">
                         <h2>Stay productive, wherever you are</h2>
                         <p>Never let location be an issue accessing your files. Fylo has you covered for all your file storage needs.</p>
@@ -63,7 +66,7 @@
                     </div>
                 </section>
 
-                <section class="testimonials group">
+                <section class="testimonials">
                     <img class="bg-quote" src="images/bg-quotes.png">
                     <article class="testimonial">
                         <p class="text-testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed tempore saepe eum tempora aspernatur, mollitia iste, numquam harum doloremque explicabo sapiente </p>
@@ -94,43 +97,50 @@
                 </section>
             </div>
         </main>
-        <aside class="early-access group">
+        <aside class="early-access">
             <h2>Get early access today</h2>
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
             <form>
-                <input class="email" type="email" placeholder="email@example.com">
-                <button class="button"type="button"><a href="#">Get Started for Free</a></button>
+                <input class="email button" type="email" placeholder="email@example.com">
+                <button class="button" type="button"><a href="#">Get Started for Free</a></button>
             </form>
         </aside>
-
-        <footer class="main-footer group">
-            <div class="branch">
-                <img class="footer-logo" src="images/logo.svg" alt="Fylo logo">
-                <p class="location">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed ut sapiente expedita perferendis officia</p>
+        <footer>
+            <div class="main-footer">
+                <div class="contact">
+                    <!-- <img class="footer-logo" src="images/logo.svg" alt="Fylo logo"> -->
+                    <!-- <img src="images/icon-location.svg" alt="location"> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sed ut sapiente expedita perferendis officia</p>
+                </div>
+                <div class="line" >  
+                    <!-- <img src="images/icon-phone.svg" alt="phone"> -->
+                    <p class="phone">+1-543-123-4567</p>
+                    <!-- <img src="images/icon-email.svg" alt="email-adress"> -->
+                    <p><a href="mailto:example@fylo.com">example@fylo.com</a></p>
+                </div>
+                <div class="nav-option">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a>Blog</a></li>
+                    </ul>
+                </div>
+                <div class="nav-option"> 
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="http://www.facebook.com" target="_blank">FB</a></li>
+                        <li><a href="http://www.twitter.com" target="_blank">TW</a></li>
+                        <li><a href="http://www.instagram.com" target="_blank">IG</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="contact" >  
-                <p class="phone">+1-543-123-4567</p>
-                <p><a href="mailto:example@fylo.com">example@fylo.com</a></p>
-            </div>
-            <nav class="nav-footer">
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Press</a></li>
-                    <li><a>Blog</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <ul>
-                    <li><a href="http://www.facebook.com" target="_blank"><img src="images/fb.svg" class="style"></a></li>
-                    <li><a href="http://www.twitter.com" target="_blank"><img src="images/tw.svg" class="style"></a></li>
-                    <li><a href="http://www.instagram.com" target="_blank"><img src="images/ig.svg" class="style"></a></li>
-                </ul>
         </footer>
     </div>
 </body>

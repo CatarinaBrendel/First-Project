@@ -5,10 +5,23 @@
     box-sizing: border-box;
 }
 body{
+    position: relative;
     background-color: #181e2a;
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+}
+
+.wrapping{
+    margin: 0 auto;
+}
+
+.nav-header a,
+.main-footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85em;
+    list-style-type: none;
 }
 
 .button a{
@@ -25,86 +38,6 @@ body{
     font-size: 1em;
 }
 
-/* =========================================
-    Basic Layout
-========================================== */
-/* ---------- navigation ----------*/
-.nav-header a,
-.nav-footer a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.85em;
-}
-
-.wrapper{
-    width: 95%;
-}
-
-.logo{
-    float: left;
-    width:25%;
-    margin-top: 5%;
-    margin-left: 5%;
-}
-
-.nav-header{
-    float: right;
-    margin-top: .6em;
-}
-
-.nav-header li{
-    display: inline;
-    padding: .8em;
-}
-
-/* ---------- Main ---------- */
-.illustration{
-    text-align: center;
-    padding: 0 4.5em;
-    font-size: .85em;
-    line-height: 1.5em;
-    margin-bottom: 3em;
-}
-.illustration h1{
-    font-size: 1.6em;
-    line-height: 1.5em;
-    padding: 0 0.3em;
-}
-.logo-illustration{
-    padding-top: 3em;
-    width: 90%;
-    text-align: center;
-}
-
-.objective{
-    text-align: center;
-    font-size: 0.9em;
-    padding: 6em 2em;
-    margin-bottom: 5em;
-}
-
-.icon{
-    width: 20%;
-    padding-top: 3.5em;
-}
-
-.logo-productive{
-    width: 50%;
-    text-align: center;
-}
-
-.text-productive{
-    text-align: left;
-    padding: 0 1.5em;
-    font-size: .95em;
-    line-height: 1.5em;
-    margin-bottom: 6em;
-}
-
-.productive h2{
-    font-size: 1.2em;
-}
-
 .productive a{
     text-decoration: none;
     color: #4fc4d5;
@@ -112,6 +45,7 @@ body{
     border-bottom: 2px solid #4fc4d5;
     font-size: 0.85em;
 }
+
 .productive a:after{
     content: url(images/icon-arrow.svg);
     margin-left: 5px;
@@ -143,15 +77,151 @@ body{
     font-size: .5em;
     line-height: .6em;
 }
-.testimonials{
-    position: relative;
-}
+
 .bg-quote{
     position: absolute;
-    width: 25px;
-    left: 60px;
-    top: -20px;
+    width: 50px;
+    left: 5%;
+    margin-top: 20px;
     z-index: -1;
 }
+
+.email{
+    background-color: white;
+    width: 55%;
+    height: 50px;
+    margin: 20px 25px;
+    padding-left: 15px;
+}
+
+.early-access button{
+    width: 20%;
+    height: 50px;
+}
+
+/* =========================================
+    Basic Layout
+========================================== */
+/* ---------- navigation ----------*/
+
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+.main-header h1{
+    flex-grow: 1;
+    margin: 0;
+    
+}
+
+.nav-header{
+}
+
+.nav-header li{
+    display: inline-block;
+    padding: 2em;
+}
+
+/* ------ Flexbox Properties ------ */
+
+.illustration{
+    text-align: center;
+    padding: 10%;
+}
+
+.illustration h1{
+    padding: 0 20%;
+    font-size: 2.5em;
+}
+
+.illustration p{
+    padding: 0 25%;
+    font-size: 1.2em;
+}
+
+.illustrtion button{
+    font-size: 1.2em;
+}
+.objective{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.item{
+    width: 40%;
+    padding: 2em 3em;
+    text-align: center;
+}
+
+.productive{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8em;
+}
+
+.logo-productive{
+    height: 50%;
+    width: 50% ;
+}
+.text-productive{
+    width: 40%;
+    margin: 5%;
+    font-size: 1.1em;
+}
+
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: relative;
+    padding: 0 3em;
+    margin: 3em 0;
+}
+
+.testimonial{
+    font-size: 1.5em;
+}
+.early-access{
+    width: 60%;
+    background-color: #1c2230;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 4em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.early-access p{
+    padding: 0 3em;
+}
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.contact{
+    flex-grow: 2;
+    width: 200px;
+    border: 2px solid white;
+}
+
+.line,
+.nav-option,
+.social{
+    flex-grow: 1;
+    margin: 0 35px;
+    padding: 0 10px;
+    border: 2px solid white;
+}
+
 
 /* -------- Media Queries --------*/
