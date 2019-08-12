@@ -1,6 +1,6 @@
 # A Simple Landing Webpage
 
-This simple Landing Page created mainly with the purpose to learn the basics and fix the fundamentals of HTML and CSS language. 
+This simple Landing Page was created mainly with the purpose to learn the basics and fix the fundamentals of HTML and CSS language. 
 The basic layout was copied from the following website: https://www.frontendmentor.io.
 
 I hold no responsability once you run the code in your computer and not produce the desired result.
